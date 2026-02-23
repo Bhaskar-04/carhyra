@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import CarCard from './components/CarCard';
 import Footer from './components/Footer';
 import { CARS, VALUE_POINTS, WHATSAPP_NUMBER } from './constants';
+import heroimg from "../src/assets/hero.png"
 
 export default function App() {
   const scrollToFleet = () => {
@@ -28,7 +29,7 @@ export default function App() {
       <section id="home" className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1920" 
+            src={heroimg} 
             alt="Hero Car"
             className="w-full h-full object-cover brightness-50"
             referrerPolicy="no-referrer"
