@@ -15,3 +15,11 @@
 .glass-card {
   @apply bg-white/80 backdrop-blur-sm border border-slate-100 shadow-sm;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

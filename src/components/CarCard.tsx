@@ -3,23 +3,34 @@ import { MessageCircle, Users, Fuel, Gauge } from 'lucide-react';
 import type { CarType } from "../constants";
 import { WHATSAPP_NUMBER } from "../constants";
 import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
 
 interface CarCardProps {
   car: CarType;
 }
 
 const CarCard: React.FC<CarCardProps> = ({ car }) => {
-  const handleWhatsAppBooking = () => {
-    const message = encodeURIComponent(`Hi Carhyra, I'm interested in booking the ${car.name}. Please share availability.`);
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/cars/${car.id}`);
+  };
+
+  const handleWhatsAppBooking = (e: React.MouseEvent) => {
+    e.stopPropagation(); // VERY IMPORTANT 🔥 prevents card click
+    const message = encodeURIComponent(
+      `Hi Carhyra, I'm interested in booking the ${car.name}. Please share availability.`
+    );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
   return (
     <motion.div 
+      onClick={handleCardClick}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300"
+      className="cursor-pointer group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300"
     >
       <div className="relative h-48 overflow-hidden">
         <img 
@@ -39,7 +50,6 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
             <h3 className="text-lg font-bold text-slate-900">{car.name}</h3>
             <p className="text-sm text-slate-500">Starting from</p>
           </div>
-          
         </div>
 
         <div className="grid grid-cols-3 gap-2 mb-6">

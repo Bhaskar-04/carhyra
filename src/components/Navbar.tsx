@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-primary backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"}`}
     >
       <div className="max-w-7xl mx-auto  px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
@@ -40,20 +40,19 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#home"
-            className={`text-sm font-medium hover:text-primary transition-colors ${!isScrolled ? "text-white/90" : "text-slate-600"}`}
+          className={`text-sm font-medium hover:text-primary hover:underline transition-colors ${!isScrolled ? "text-white/90" : "text-white/90 hover:underline hover:text-white"}`}
           >
             Home
           </a>
           <a
             href="#fleet"
-            className={`text-sm font-medium hover:text-primary transition-colors ${!isScrolled ? "text-white/90" : "text-slate-600"}`}
+            className={`text-sm font-medium hover:text-primary hover:underline transition-colors ${!isScrolled ? "text-white/90" : "text-white/90 hover:underline hover:text-white"}`}
           >
             Fleet
           </a>
           <a
             href="#about"
-            className={`text-sm font-medium hover:text-primary transition-colors ${!isScrolled ? "text-white/90" : "text-slate-600"}`}
+            className={`text-sm font-medium hover:text-primary hover:underline transition-colors ${!isScrolled ? "text-white/90" : "text-white/90 hover:underline hover:text-white"}`}
           >
             Why Us
           </a>
