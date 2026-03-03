@@ -1,5 +1,6 @@
 import { MessageCircle, Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../constants';
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   const handleWhatsAppContact = () => {
@@ -13,13 +14,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C</span>
+              <div className="w-28 h-12 bg-primary rounded-lg pt-4 flex items-center justify-center">
+                <img src={logo} className='scale-[1.3]' alt="" />
               </div>
-              <span className="text-2xl font-bold tracking-tight">Carhyra</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Premium car rental services tailored for your comfort and style. Experience the road like never before.
+              Perfect car rental services tailored for your comfort and style. Experience the road like never before.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-primary transition-colors">
@@ -49,7 +49,7 @@ export default function Footer() {
             <ul className="space-y-4 text-slate-400 text-sm">
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+1 (234) 567-890</span>
+                <span>(+91)-8506885683</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary" />
@@ -57,7 +57,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>123 Luxury Drive, Beverly Hills, CA</span>
+                <span>Vardhaman Mall, Sector-19, Faridabad</span>
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
-          <p>© {new Date().getFullYear()} Carhyra. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Carhyra. All rights reserved. Designed by neyair</p>
         </div>
       </div>
     </footer>

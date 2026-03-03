@@ -32,7 +32,7 @@ export interface CarType {
   name: string;
   type: string;
   price: number;
-  image: string[];
+  image: string;
   images: string[];
   transmission: 'Automatic' | 'Manual';
   fuel: 'Petrol' | 'Diesel' | 'Electric';
@@ -45,8 +45,8 @@ export const CARS: CarType[] = [
     id: 'Baleno2023',
     name: 'Suzuki Baleno',
     type: 'Hatchback',
-    price: 2399,
-    image: [baleno6Img],
+    price: 92,
+    image: baleno6Img,
     transmission: 'Manual',
     images: [ baleno6Img,baleno4Img,baleno5Img,balenoImg, baleno2Img, baleno3Img, baleno7Img,baleno8Img,baleno9Img, baleno10Img, baleno11Img],
     fuel: 'Petrol',
@@ -56,43 +56,10 @@ export const CARS: CarType[] = [
     id: 'Brezza',
     name: 'Suzuki Brezza',
     type: 'Compact-SUV',
-    price: 2899,
-    image: [breezaImg],
+    price: 109,
+    image: breezaImg,
     transmission: 'Manual',
     images: [breezaImg,breeza2Img,breeza3Img,breeza4Img,breeza5Img,breeza6Img,breeza7Img,breeza8Img,breeza9Img,breeza10Img,],
-    fuel: 'Petrol',
-    seats: 5,
-  },
-  {
-    id: 'Punch',
-    name: 'Tata Punch Facelift',
-    type: 'mini-SUV',
-    price: 130,
-    image: 'https://asset.autocarindia.com/static/image-galleries/images/20260109_110637_efc1a6f4.png?w=728&q=75',
-    transmission: 'Manual',
-    images: [balenoImg, baleno2Img, baleno3Img],
-    fuel: 'Petrol',
-    seats: 5,
-  },
-  {
-    id: 'ScorpioN',
-    name: 'Mahindra ScorpioN',
-    type: 'Full Size SUV',
-    price: 250,
-    image: 'https://dentasmile.in/wp-content/uploads/2025/12/mahindra-scorpio-n-facelift-2026-could-bring-bold-styling-updates-1024x576.webp',
-    transmission: 'Manual',
-    images: [balenoImg, baleno2Img, baleno3Img],
-    fuel: 'Petrol',
-    seats: 7,
-  },
-  {
-    id: 'Baleno2025',
-    name: 'Suzuki Baleno',
-    type: 'Hatchback',
-    price: 140,
-    image: 'https://cdni.autocarindia.com/ExtraImages/20230310053922_aaaaaaa.jpg',
-    transmission: 'Automatic',
-    images: [balenoImg, baleno2Img, baleno3Img],
     fuel: 'Petrol',
     seats: 5,
   },
@@ -100,13 +67,36 @@ export const CARS: CarType[] = [
     id: 'i20-sunroof',
     name: 'Hyundai i20 sunroof edition',
     type: 'Hatchback',
-    price: 140,
+    price: 97,
     image: 'https://s3.amazonaws.com/advaithmedia/backend/storage/uploads/2022/07/25085225/Atlas-white-3.webp',
     transmission: 'Manual',
     images: [balenoImg, baleno2Img, baleno3Img],
     fuel: 'Petrol',
     seats: 5,
   },
+  {
+    id: 'Punch',
+    name: 'Tata Punch Facelift',
+    type: 'mini-SUV',
+    price: 83,
+    image: 'https://asset.autocarindia.com/static/image-galleries/images/20260109_110637_efc1a6f4.png?w=728&q=75',
+    transmission: 'Manual',
+    images: [balenoImg, baleno2Img, baleno3Img],
+    fuel: 'Petrol',
+    seats: 5,
+  },
+  {
+    id: 'Kia',
+    name: 'Kia Carens',
+    type: 'Full Size SUV',
+    price: 169,
+    image: 'https://i2-vnexpress.vnecdn.net/2025/05/09/KiaCarensClavis1-1746758641-9874-1746758654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=o-xbhaiRvXaEyWsRuMOWiQ',
+    transmission: 'Manual',
+    images: [balenoImg, baleno2Img, baleno3Img],
+    fuel: 'Petrol',
+    seats: 7,
+  },
+  
 ];
 
 export const VALUE_POINTS = [

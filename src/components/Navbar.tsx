@@ -2,6 +2,7 @@ import { MessageCircle, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { WHATSAPP_NUMBER } from "../constants";
 import logo from "../assets/logo.png";
+import {Link} from "react-router-dom"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,11 +30,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto  px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="px-6 py-3 h-12 w-32 bg-primary rounded-xl flex items-center justify-center">
+            <Link to={"/"} >
             <img
               src={logo}
               alt="Carhyra Logo"
               className="h-full w-full object-cover scale-200 mt-5 "
             />
+            </Link>
           </div>
         </div>
 
