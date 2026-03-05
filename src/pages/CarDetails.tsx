@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { useState, useEffect, useMemo } from "react";
 
 /* ================= TESTIMONIAL IMPORTS ================= */
-import testimonial1 from "../assets/testimonials/IMG_TEST1.png";
+import testimonial1 from "../assets/testimonials/TEST1.png";
 import testimonial2 from "../assets/testimonials/IMG_5585.png";
 import testimonial3 from "../assets/testimonials/IMG_5586.png";
 import testimonial4 from "../assets/testimonials/IMG_5587.png";
