@@ -6,20 +6,20 @@ import { useState, useEffect, useMemo } from "react";
 
 /* ================= TESTIMONIAL IMPORTS ================= */
 import testimonial1 from "../assets/testimonials/TEST1.png";
-import testimonial2 from "../assets/testimonials/IMG_5585.png";
-import testimonial3 from "../assets/testimonials/IMG_5586.png";
-import testimonial4 from "../assets/testimonials/IMG_5587.png";
-import testimonial5 from "../assets/testimonials/IMG_5590.png";
-import testimonial6 from "../assets/testimonials/IMG_5591.png";
-import testimonial7 from "../assets/testimonials/IMG_5593.png";
-import testimonial8 from "../assets/testimonials/IMG_5594.png";
-import testimonial9 from "../assets/testimonials/IMG_5595.png";
-import testimonial10 from "../assets/testimonials/IMG_5596.png";
-import testimonial11 from "../assets/testimonials/IMG_5597.png";
-import testimonial12 from "../assets/testimonials/IMG_5598.png";
-import testimonial13 from "../assets/testimonials/IMG_5599.png";
-import testimonial14 from "../assets/testimonials/IMG_5600.png";
-import testimonial15 from "../assets/testimonials/IMG_5601.png";
+import testimonial2 from "../assets/testimonials/TEST2.png";
+import testimonial3 from "../assets/testimonials/TEST3.png";
+import testimonial4 from "../assets/testimonials/TEST4.png";
+import testimonial5 from "../assets/testimonials/TEST5.png";
+import testimonial6 from "../assets/testimonials/TEST6.png";
+import testimonial7 from "../assets/testimonials/TEST7.png";
+import testimonial8 from "../assets/testimonials/TEST8.png";
+import testimonial9 from "../assets/testimonials/TEST9.png";
+import testimonial10 from "../assets/testimonials/TEST10.png";
+import testimonial11 from "../assets/testimonials/TEST11.png";
+import testimonial12 from "../assets/testimonials/TEST12.png";
+import testimonial13 from "../assets/testimonials/TEST13.png";
+import testimonial14 from "../assets/testimonials/TEST14.png";
+import testimonial15 from "../assets/testimonials/TEST15.png";
 
 export default function CarDetails() {
   const { id } = useParams();
