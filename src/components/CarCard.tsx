@@ -48,7 +48,7 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h3 className="text-lg font-bold text-slate-900">{car.name}</h3>
-            <p className="text-sm text-slate-500">Starting from</p>
+            <p className="text-sm text-slate-500">Starting from ₹{car.price}/hour</p>
           </div>
         </div>
 

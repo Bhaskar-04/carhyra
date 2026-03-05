@@ -23,6 +23,12 @@ import breeza8Img from "./assets/breeza/8.jpeg"
 import breeza9Img from "./assets/breeza/9.jpeg"
 import breeza10Img from "./assets/breeza/10.jpeg"
 
+import carensImg from "./assets/carens/1.png"
+import carens2Img from "./assets/carens/2.png"
+import carens3Img from "./assets/carens/3.png"
+import carens4Img from "./assets/carens/4.png"
+
+
 
 
 
@@ -32,6 +38,7 @@ export interface CarType {
   name: string;
   type: string;
   price: number;
+  security_deposit: number;
   image: string;
   images: string[];
   transmission: 'Automatic' | 'Manual';
@@ -46,9 +53,10 @@ export const CARS: CarType[] = [
     name: 'Suzuki Baleno',
     type: 'Hatchback',
     price: 92,
+    security_deposit : 2000,
     image: baleno6Img,
     transmission: 'Manual',
-    images: [ baleno6Img,baleno4Img,baleno5Img,balenoImg, baleno2Img, baleno3Img, baleno7Img,baleno8Img,baleno9Img, baleno10Img, baleno11Img],
+    images: [ baleno4Img,baleno6Img,baleno5Img,balenoImg, baleno2Img, baleno3Img, baleno7Img,baleno8Img,baleno9Img, baleno10Img, baleno11Img],
     fuel: 'Petrol',
     seats: 5,
   },
@@ -57,6 +65,7 @@ export const CARS: CarType[] = [
     name: 'Suzuki Brezza',
     type: 'Compact-SUV',
     price: 109,
+    security_deposit : 2000,
     image: breezaImg,
     transmission: 'Manual',
     images: [breezaImg,breeza2Img,breeza3Img,breeza4Img,breeza5Img,breeza6Img,breeza7Img,breeza8Img,breeza9Img,breeza10Img,],
@@ -65,37 +74,53 @@ export const CARS: CarType[] = [
   },
   {
     id: 'i20-sunroof',
-    name: 'Hyundai i20 sunroof edition',
+    name: 'Hyundai i20 (sunroof)',
     type: 'Hatchback',
     price: 97,
-    image: 'https://s3.amazonaws.com/advaithmedia/backend/storage/uploads/2022/07/25085225/Atlas-white-3.webp',
+    security_deposit : 2000,
+    image: 'https://cdn-s3.autocarindia.com/hyundai/i20/_AAB7144.JPG?w=640',
     transmission: 'Manual',
-    images: [balenoImg, baleno2Img, baleno3Img],
+    images: ['https://www.team-bhp.com/forum/attachments/official-new-car-reviews/1295277d1412337443-hyundai-elite-i20-official-review-2.jpg', "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/i20-N-Line/10285/1755057897543/rear-view-119.jpg", "https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/40530/i20-interior-dashboard.jpeg?q=80"],
     fuel: 'Petrol',
     seats: 5,
+  },
+  {
+    id: 'Kia',
+    name: 'Kia Carens Clavis',
+    type: 'Full Size SUV',
+    price: 169,
+    security_deposit : 4000,
+    image: 'https://i2-vnexpress.vnecdn.net/2025/05/09/KiaCarensClavis1-1746758641-9874-1746758654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=o-xbhaiRvXaEyWsRuMOWiQ',
+    transmission: 'Manual',
+    images: [carensImg,carens2Img,carens3Img,carens4Img],
+    fuel: 'Petrol',
+    seats: 7,
   },
   {
     id: 'Punch',
     name: 'Tata Punch Facelift',
     type: 'mini-SUV',
     price: 83,
+    security_deposit : 2000,
     image: 'https://asset.autocarindia.com/static/image-galleries/images/20260109_110637_efc1a6f4.png?w=728&q=75',
     transmission: 'Manual',
-    images: [balenoImg, baleno2Img, baleno3Img],
+    images: ["https://imgd.aeplcdn.com/600x600/n/cw/ec/187937/tata-punch-right-front-three-quarter2.jpeg?isig=0", "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/172825/punch-exterior-left-side-view-16.jpeg?isig=0&q=80", "https://stimg.cardekho.com/images/carinteriorimages/930x620/Tata/Punch/9623/1762425702890/dashboard-59.jpg?imwidth=420&impolicy=resize"],
     fuel: 'Petrol',
     seats: 5,
   },
-  {
-    id: 'Kia',
-    name: 'Kia Carens',
-    type: 'Full Size SUV',
-    price: 169,
-    image: 'https://i2-vnexpress.vnecdn.net/2025/05/09/KiaCarensClavis1-1746758641-9874-1746758654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=o-xbhaiRvXaEyWsRuMOWiQ',
+   {
+    id: 'Ertiga',
+    name: 'Suzuki Ertiga',
+    type: 'mini-SUV',
+    price: 111,
+    security_deposit : 3000,
+    image: 'https://images.jdmagicbox.com/quickquotes/images_main/ertiga-cng-vxi-pearl-arctic-white-271052341-5yv8z.png',
     transmission: 'Manual',
-    images: [balenoImg, baleno2Img, baleno3Img],
+    images: ["https://images.jdmagicbox.com/quickquotes/images_main/ertiga-cng-vxi-pearl-arctic-white-271052341-5yv8z.png", "https://images.overdrive.in/wp-content/odgallery/2018/11/48776_Maruti_Suzuki_Ertiga_2019_010.JPG", "https://images10.gaadi.com/usedcar_image/5144811/original/processed_fb6596ec-b2eb-42d3-b04c-7faf78091145.jpg?imwidth=640"],
     fuel: 'Petrol',
     seats: 7,
   },
+  
   
 ];
 
@@ -117,7 +142,7 @@ export const VALUE_POINTS = [
   },
   {
     icon: Car,
-    title: 'Premium Fleet',
+    title: 'Perfect Fleet',
     description: 'Well-maintained, clean, and modern vehicles for a superior driving experience.',
   },
 ];

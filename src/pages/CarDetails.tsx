@@ -90,9 +90,15 @@ export default function CarDetails() {
     return () => clearInterval(interval);
   }, [images]);
 
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   if (!car) {
     return <div className="p-20 text-2xl">Car Not Found</div>;
   }
+
+  
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
@@ -152,7 +158,10 @@ export default function CarDetails() {
                 <b>Fuel:</b> {car.fuel}
               </p>
               <p>
-                <b>Starting Price:</b> ₹{car.price}/hour*
+                <b>Price:</b> ₹{car.price*24}/- per day (₹{car.price}/-hour*)
+              </p>
+              <p>
+                <b>Security Deposit:</b> ₹{car.security_deposit} (refundable within 48 hours after the ride)
               </p>
             </div>
 
