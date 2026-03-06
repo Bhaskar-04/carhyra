@@ -161,7 +161,10 @@ export default function CarDetails() {
                 <b>Price:</b> ₹{car.price*24}/- per day (₹{car.price}/-hour*)
               </p>
               <p>
-                <b>Security Deposit:</b> ₹{car.security_deposit} (refundable within 48 hours after the ride)
+                <b>Booking Duration:</b> Minimum 1 day
+              </p>
+              <p>
+                <b>Security Deposit:</b> ₹{car.security_deposit} (Refundable within 48 hours after the ride)
               </p>
             </div>
 
@@ -405,6 +408,14 @@ export default function CarDetails() {
                 belongings left inside the vehicle or delays caused by
                 unforeseen circumstances. By booking and using the vehicle, the
                 renter agrees to all terms and conditions stated above.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">
+                13. GPS Tracking
+              </h3>
+              <p>
+                Your safety is our priority, to keep you safe all our cars fitted with gps trackers & are monitored round the clock.
               </p>
             </div>
           </div>

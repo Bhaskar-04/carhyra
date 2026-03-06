@@ -5,7 +5,7 @@ import CarCard from "../components/CarCard";
 import Footer from "../components/Footer";
 import { CARS, VALUE_POINTS, WHATSAPP_NUMBER } from "../constants";
 import heroimg from "../assets/hero.png";
-import QR from "../assets/QR.jpeg";
+import QR from "../assets/QR.png";
 
 export default function Home() {
   const scrollToFleet = () => {
@@ -113,7 +113,7 @@ export default function Home() {
                   alt="Google Review QR"
                   className="h-28 w-28 object-contain"
                 />
-
+                
                 <a
                   href="https://g.page/r/CY30yh0rmTmTEBI/review"
                   target="_blank"
