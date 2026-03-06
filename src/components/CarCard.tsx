@@ -39,9 +39,6 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-primary">
-          {car.type}
-        </div>
       </div>
       
       <div className="p-6">

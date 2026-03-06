@@ -36,7 +36,6 @@ import carens4Img from "./assets/carens/4.png"
 export interface CarType {
   id: string;
   name: string;
-  type: string;
   price: number;
   security_deposit: number;
   image: string;
@@ -51,7 +50,6 @@ export const CARS: CarType[] = [
   {
     id: 'Baleno2023',
     name: 'Suzuki Baleno',
-    type: 'Hatchback',
     price: 92,
     security_deposit : 2000,
     image: baleno6Img,
@@ -63,7 +61,6 @@ export const CARS: CarType[] = [
   {
     id: 'Brezza',
     name: 'Suzuki Brezza',
-    type: 'Compact-SUV',
     price: 109,
     security_deposit : 2000,
     image: breezaImg,
@@ -74,8 +71,7 @@ export const CARS: CarType[] = [
   },
   {
     id: 'i20-sunroof',
-    name: 'Hyundai i20 (sunroof)',
-    type: 'Hatchback',
+    name: 'Hyundai i20 (with sunroof)',
     price: 97,
     security_deposit : 2000,
     image: 'https://cdn-s3.autocarindia.com/hyundai/i20/_AAB7144.JPG?w=640',
@@ -87,7 +83,6 @@ export const CARS: CarType[] = [
   {
     id: 'Kia',
     name: 'Kia Carens Clavis',
-    type: 'Full Size SUV',
     price: 169,
     security_deposit : 4000,
     image: 'https://i2-vnexpress.vnecdn.net/2025/05/09/KiaCarensClavis1-1746758641-9874-1746758654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=o-xbhaiRvXaEyWsRuMOWiQ',
@@ -99,7 +94,6 @@ export const CARS: CarType[] = [
   {
     id: 'Punch',
     name: 'Tata Punch Facelift',
-    type: 'mini-SUV',
     price: 83,
     security_deposit : 2000,
     image: 'https://asset.autocarindia.com/static/image-galleries/images/20260109_110637_efc1a6f4.png?w=728&q=75',
@@ -111,9 +105,8 @@ export const CARS: CarType[] = [
    {
     id: 'Ertiga',
     name: 'Suzuki Ertiga',
-    type: 'mini-SUV',
-    price: 111,
-    security_deposit : 3000,
+    price: 149,
+    security_deposit : 4000,
     image: 'https://images.jdmagicbox.com/quickquotes/images_main/ertiga-cng-vxi-pearl-arctic-white-271052341-5yv8z.png',
     transmission: 'Manual',
     images: ["https://images.jdmagicbox.com/quickquotes/images_main/ertiga-cng-vxi-pearl-arctic-white-271052341-5yv8z.png", "https://images.overdrive.in/wp-content/odgallery/2018/11/48776_Maruti_Suzuki_Ertiga_2019_010.JPG", "https://images10.gaadi.com/usedcar_image/5144811/original/processed_fb6596ec-b2eb-42d3-b04c-7faf78091145.jpg?imwidth=640"],
