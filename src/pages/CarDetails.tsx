@@ -172,7 +172,7 @@ export default function CarDetails() {
               onClick={handleWhatsApp}
               className="mt-10 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition-all"
             >
-              Book This Car on WhatsApp
+              Rent This Car on WhatsApp
             </button>
 
             {/* ================= TESTIMONIALS ================= */}

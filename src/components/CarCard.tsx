@@ -69,7 +69,7 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
           className="w-full bg-primary hover:bg-primary-dark text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors duration-200"
         >
           <MessageCircle className="w-5 h-5" />
-          Book on WhatsApp
+          Rent Now
         </button>
       </div>
     </motion.div>
